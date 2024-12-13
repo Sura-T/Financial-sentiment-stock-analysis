@@ -3,3 +3,8 @@
 __pycache__/
 # Virtual environment folder
 venv/
+
+data/raw/
+data/processed/
+*.csv
+*.xlsx
