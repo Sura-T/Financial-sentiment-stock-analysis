@@ -107,8 +107,8 @@ This project demonstrates the power of combining EDA, technical analysis, and au
 
 ## Visualizations
 
-1. ![Correlation between news sentiment and stock returns]('../../data/assets/correlation.png')
-2. ![AAPL- close price and SMAS]('../../data/assets//AAPL-%20close%20price%20and%20SMAS.png')
-3. ![AAPL- MACD and Signal Line]('../../data/assets/AAPL-%20MACD%20and%20Signal%20Line.png')
-4. ![AAPL- Relative Strength Index]('../../data/assets/AAPL-%20Relative%20Strength%20Index.png')
-5. ![AMZN- Close Price and SMAs]('../../data/assets/AMZN-%20Close%20Price%20and%20SMAs.png')
+1. ![Correlation between news sentiment and stock returns]('../../assets/correlation%20between.png')
+2. ![AAPL- close price and SMAS]('../../assets//AAPL%20-%20Close%20Price%20and%20SMAs.png')
+3. ![AAPL- MACD and Signal Line]('../../assets/Screenshot%202024-12-17%20221832.png')
+4. ![AAPL- Relative Strength Index]('../../assets/Screenshot%202024-12-17%20221739.png')
+5. ![AMZN- Close Price and SMAs]('../../assets/Screenshot%202024-12-17%20221610.png')
