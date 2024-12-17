@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project focuses on analyzing financial and stock market data using tools like PyNance, TA-Lib, and Python’s data manipulation libraries. The objective is to uncover trends, patterns, and actionable insights by applying technical and quantitative analysis on datasets retrieved from Yahoo Finance (yfinance).
+This project focuses on analyzing financial and stock market data using Python libraries like pandas, matplotlib, and TA-Lib. It leverages datasets from Yahoo Finance (`yfinance`) to perform technical analysis, uncover trends, and extract actionable insights.
 
 ---
 
@@ -12,19 +12,20 @@ This project focuses on analyzing financial and stock market data using tools li
 
 #### **Descriptive Statistics**
 
-- **Headline Length Analysis**: Basic statistics for textual lengths (e.g., average and maximum headline length) were calculated to understand textual data distribution.
-- **Article Count Per Publisher**: Analyzed the frequency of articles published by different publishers to identify the most active contributors.
-- **Publication Trends Over Time**: Analyzed publication dates for patterns such as increased frequency during specific events or timeframes.
+- **Headline Length Analysis**: Calculated basic statistics such as average and maximum headline lengths to understand the distribution of textual data.
+- **Article Count Per Publisher**: Visualized the number of articles published by each publisher to identify the most active contributors.
+- **Publication Trends Over Time**: Analyzed temporal trends in article publication to identify patterns during key events.
 
-#### **Text Analysis (Sentiment Analysis & Topic Modeling)**
+#### **Text Analysis**
 
-- **Sentiment Analysis**: Applied natural language processing to classify headline sentiment into positive, negative, or neutral categories.
-- **Keyword and Topic Extraction**: Identified common keywords, phrases, and topics (e.g., “FDA approval” or “price target”) to extract insights from news headlines.
+- **Sentiment Analysis**: Applied sentiment classification to group headlines into positive, negative, or neutral categories.
+- **Keyword and Topic Extraction**: Identified frequent keywords and phrases (e.g., “FDA approval,” “price target”) for topic insights.
 
 #### **Publisher Analysis**
 
-- Identified publishers contributing the most news and analyzed their reporting style (e.g., financial analysis vs. breaking news).
-- Grouped articles by publisher domains to understand organizational contributions.
+- Highlighted publishers contributing the most news and explored their reporting styles (e.g., financial deep dives vs. breaking news).
+
+_(Insert descriptive visualizations here, e.g., bar charts or line graphs)_
 
 ---
 
@@ -32,74 +33,90 @@ This project focuses on analyzing financial and stock market data using tools li
 
 #### **Data Preparation**
 
-- Loaded and cleaned stock market data from seven separate datasets obtained via yfinance.
-- Ensured uniformity across datasets with essential columns like `Open`, `High`, `Low`, `Close`, and `Volume`.
-- Organized data in a single Jupyter Notebook for streamlined analysis.
+- Collected stock market data for seven distinct datasets via `yfinance`.
+- Standardized datasets with essential columns like `Open`, `High`, `Low`, `Close`, and `Volume`.
+- Organized all datasets into a single Jupyter Notebook for streamlined analysis.
 
-#### **Application of Technical Indicators**
+#### **Technical Indicators**
 
-Using **TA-Lib**:
+Using **TA-Lib**, calculated:
 
-- **Moving Averages (MA)**: Calculated 20-day and 50-day Simple Moving Averages to smooth out price data and identify trends.
-- **Relative Strength Index (RSI)**: Evaluated momentum and potential overbought/oversold conditions using a 14-day RSI.
-- **MACD (Moving Average Convergence Divergence)**: Analyzed the relationship between short-term and long-term price movements to identify bullish or bearish signals.
+- **Moving Averages (MA)**: 20-day and 50-day Simple Moving Averages to identify price trends.
+- **Relative Strength Index (RSI)**: Measured momentum to detect overbought or oversold conditions.
+- **MACD**: Analyzed short-term vs. long-term price movements to generate buy/sell signals.
 
-#### **Visualization of Indicators**
+#### **Visualization**
 
-- Plotted closing prices alongside moving averages to identify crossover points.
-- Created RSI charts with overbought and oversold thresholds to highlight significant events.
-- Visualized MACD and signal lines to interpret price momentum shifts.
+- Plotted closing prices with moving averages to highlight trend changes.
+- Created RSI charts with overbought (70) and oversold (30) thresholds.
+- Visualized MACD and signal lines to interpret momentum shifts.
+
+_(Insert technical indicator visualizations here, e.g., line charts or overlays)_
 
 ---
 
-### **3. Consolidation of Multiple Datasets**
+### **3. Automated Analysis for Multiple Datasets**
 
-- Unified analysis for seven financial datasets within a single Jupyter Notebook.
-- Leveraged loops and dictionaries to efficiently calculate indicators and create visualizations for each dataset.
+- Unified analysis for all seven datasets in a single workflow.
+- Used loops and dictionaries to automate indicator calculations and chart creation.
+- Reduced manual effort by dynamically applying analysis to each dataset.
+
+_(Insert screenshots or summary charts showing the automation output)_
 
 ---
 
 ## Tools and Libraries Used
 
-1. **Python Libraries**:
-   - `pandas` for data manipulation and cleaning.
-   - `matplotlib` for data visualization.
-   - `talib` for technical analysis indicators.
-2. **Data Sources**:
-   - Data retrieved via `yfinance` API.
-3. **Jupyter Notebook**:
-   - Centralized platform for development, visualization, and reporting.
+### **Python Libraries**
 
----
+1. `pandas`: Data manipulation and cleaning.
+2. `matplotlib`: Data visualization.
+3. `TA-Lib`: Technical analysis indicators.
+4. `yfinance`: Stock market data retrieval.
 
-## Future Work
+### **Data Sources**
 
-- **Enhanced Analysis**: Add advanced sentiment analysis and topic modeling using libraries like SpaCy or Transformers.
-- **Comparison with Market Events**: Correlate trends with real-world market events for deeper insights.
-- **Predictive Modeling**: Incorporate machine learning algorithms to forecast stock price movements based on historical and indicator data.
+- Historical stock data from Yahoo Finance via `yfinance`.
+
+### **Development Platform**
+
+- **Jupyter Notebook**: Centralized environment for coding, visualization, and reporting.
 
 ---
 
 ## How to Run the Notebook
 
-1. Install required Python libraries:
+1. **Install Required Libraries**:
    ```bash
-   pip install pandas matplotlib yfinance talib
+   pip install pandas matplotlib yfinance TA-Lib
    ```
-2. Clone the repository and navigate to the project folder:
-   ```bash
-   git clone [repository_url]
-   cd financial-analysis-project
-   ```
-3. Launch the Jupyter Notebook:
-   ```bash
-   jupyter notebook
-   ```
-4. Open the notebook file and execute each cell in sequence to replicate the analysis.
 
----
+````
+2. **Clone the Repository**:
+```bash
+git clone https://github.com/Sura-T/10-Academy.git
+cd financial-analysis-project
+````
+
+3. **Launch Jupyter Notebook**:
+
+```bash
+jupyter notebook
+```
+
+4. **Execute the Notebook**:
+
+- Open the notebook file.
+- Run each cell sequentially to reproduce the analysis.
 
 ## Conclusion
 
-This project showcases the use of EDA and quantitative analysis tools to derive meaningful insights from financial datasets. By leveraging advanced libraries and analytical methods, we aim to assist traders and investors in making data-driven decisions.
-This README is going to be edited...
+This project demonstrates the power of combining EDA, technical analysis, and automation to extract valuable insights from financial data. By leveraging Python’s robust ecosystem, the analysis serves as a foundation for traders, investors, and financial analysts to make informed decisions.
+
+## Visualizations
+
+1. ![Correlation between news sentiment and stock returns]('../../data/assets/correlation.png')
+2. ![AAPL- close price and SMAS]('../../data/assets//AAPL-%20close%20price%20and%20SMAS.png')
+3. ![AAPL- MACD and Signal Line]('../../data/assets/AAPL-%20MACD%20and%20Signal%20Line.png')
+4. ![AAPL- Relative Strength Index]('../../data/assets/AAPL-%20Relative%20Strength%20Index.png')
+5. ![AMZN- Close Price and SMAs]('../../data/assets/AMZN-%20Close%20Price%20and%20SMAs.png')
