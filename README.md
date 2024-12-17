@@ -24,8 +24,7 @@ This project focuses on analyzing financial and stock market data using Python l
 #### **Publisher Analysis**
 
 - Highlighted publishers contributing the most news and explored their reporting styles (e.g., financial deep dives vs. breaking news).
-
-_(Insert descriptive visualizations here, e.g., bar charts or line graphs)_
+  \_
 
 ---
 
@@ -51,19 +50,11 @@ Using **TA-Lib**, calculated:
 - Created RSI charts with overbought (70) and oversold (30) thresholds.
 - Visualized MACD and signal lines to interpret momentum shifts.
 
-_(Insert technical indicator visualizations here, e.g., line charts or overlays)_
-
----
-
 ### **3. Automated Analysis for Multiple Datasets**
 
 - Unified analysis for all seven datasets in a single workflow.
 - Used loops and dictionaries to automate indicator calculations and chart creation.
 - Reduced manual effort by dynamically applying analysis to each dataset.
-
-_(Insert screenshots or summary charts showing the automation output)_
-
----
 
 ## Tools and Libraries Used
 
@@ -87,16 +78,17 @@ _(Insert screenshots or summary charts showing the automation output)_
 ## How to Run the Notebook
 
 1. **Install Required Libraries**:
+
    ```bash
    pip install pandas matplotlib yfinance TA-Lib
    ```
 
-````
 2. **Clone the Repository**:
+
 ```bash
 git clone https://github.com/Sura-T/10-Academy.git
 cd financial-analysis-project
-````
+```
 
 3. **Launch Jupyter Notebook**:
 
